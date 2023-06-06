@@ -7,7 +7,7 @@ OBJCOPY = $(PREFIX)objcopy
 RANLIB = $(PREFIX)ranlib
 STRIP = $(PREFIX)strip
 
-BIN2S = $(devkitpro)/tools/bin/bin2s
+BIN2S = $(DEVKITPRO)/tools/bin/bin2s
 
 ifeq ($(NOMAPFILE),)
 LDFLAGS += -Wl,-Map,$(TARGET).map
