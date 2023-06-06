@@ -1,8 +1,8 @@
-ifeq ($(strip $(devkitPPC)),)
+ifeq ($(strip $(DEVKITPPC)),)
 $(error "Set devkitPPC in your environment.")
 endif
 
-PREFIX = $(devkitPPC)/bin/powerpc-elf-
+PREFIX = $(DEVKITPPC)/bin/powerpc-elf-
 
 CFLAGS = -mcpu=750 -mpaired -m32 -mhard-float -mno-eabi -mno-sdata
 CFLAGS += -ffreestanding -ffunction-sections
